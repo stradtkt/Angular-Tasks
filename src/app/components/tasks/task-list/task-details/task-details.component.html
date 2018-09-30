@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div [ngClass]="{red: !Task.complete, green: Task.complete}">
+      <p><button name="button" (click)="toggle()" class="btn btn-primary">Click to <span *ngIf="Task.complete">In</span>complete</button></p>
+      <p *ngIf="!Task.complete">Incomplete</p>
+      <p *ngIf="Task.complete">Complete</p>
+    </div>
+    </div>
+  </div>
+</div>
+
